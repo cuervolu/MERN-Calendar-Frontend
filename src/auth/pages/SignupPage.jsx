@@ -10,6 +10,7 @@ import {
   Row,
   Spinner,
 } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import signup from "../../assets/signup.jpg";
 import { useAuthStore, useForm } from "../../hooks";
 import styles from "./Auth.module.css";
@@ -200,9 +201,7 @@ export const SignupPage = () => {
 
                     <p className="mb-5 pb-lg-2" style={{ color: "#393f81" }}>
                       ¿Ya tienes una cuenta?{" "}
-                      <a href="/auth/login" style={{ color: "#393f81" }}>
-                        Inicia sesión
-                      </a>
+                      <Link color="inherit" to="/auth/login" style={{ color: "#393f81" }}>Inicia sesión</Link>
                     </p>
                   </Form>
                 </Card.Body>

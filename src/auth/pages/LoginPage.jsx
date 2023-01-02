@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useEffect, useMemo, useState } from "react";
 import { useAuthStore, useForm } from "../../hooks";
 import {
@@ -154,9 +155,7 @@ export const LoginPage = () => {
 
                     <p className="mb-5 pb-lg-2" style={{ color: "#393f81" }}>
                       ¿No tienes una cuenta?{" "}
-                      <a href="/auth/signup" style={{ color: "#393f81" }}>
-                        Regístrate
-                      </a>
+                      <Link color="inherit" to="/auth/signup" style={{ color: "#393f81" }}>Regístrate</Link>
                     </p>
                   </Form>
                 </Card.Body>
